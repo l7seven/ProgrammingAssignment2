@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The two functions will demonstrate lexical scoping rules using the cache
 
-## Write a short comment describing this function
+
+## Create a special "matrix" object and has list containing functions to set, get,
+## setinverse and getinverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         
@@ -20,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Computes the inverse of the special "matrix" returned by makeCacheMatrix above.
+## If the inverse has already been calculated (and the matrix has not changed), 
+## then the cachesolve will retrieve the inverse from the cache
 
 cacheSolve <- function(x, ...) {
         
